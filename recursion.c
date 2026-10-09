@@ -9,11 +9,12 @@ int power(int base, int exp) {
 void print_range(int n) {
 	if(n <= 1) {
 		printf("%d ", n);
+		return;
 	}
-	else {
-		print_range(n - 1);
-		printf("%d ", n);	
-	}
+	
+	print_range(n - 1);
+	printf("%d ", n);
+		
 }
 
 int add(int a, int b) {
